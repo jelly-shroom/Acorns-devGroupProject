@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dog Treats Website</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(26, 52, 37);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+
+            width: 100vw;
+            position: absolute;
+
+            z-index: 1;
+        }
+
+        nav {
+            text-align: right;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 40px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-image: url('../images/dogrender3.png');
+            background-size: cover;
+            background-position-y: -200px;
+            height: 100vh;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 100px 0;
+
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+        }
+
+        .button {
+            background-color: #c8d08c;
+            color: rgb(0, 0, 0);
+            padding: 20px 30px;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 00px;
+            border-radius: 15px;
+        }
+
+        .button:hover {
+            background-color: #abab2e;
+        }
+
+        .featured-products {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+            width: 100vw;
+        }
+
+        .featured-products img {
+            height: 300px;
+            margin: 0 20px;
+        }
+
+        .wave {
+            --size: 50px;
+            --R: calc(var(--size)*1.28);
+
+            -webkit-mask:
+                radial-gradient(var(--R) at 50% calc(1.8*var(--size)), #000 99%, #0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+                radial-gradient(var(--R) at 50% calc(-.8*var(--size)), #0000 99%, #000 101%) 50% var(--size)/calc(4*var(--size)) 100% repeat-x;
+            mask:
+                radial-gradient(var(--R) at 50% calc(1.8*var(--size)), #000 99%, #0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+                radial-gradient(var(--R) at 50% calc(-.8*var(--size)), #0000 99%, #000 101%) 50% var(--size)/calc(4*var(--size)) 100% repeat-x;
+
+            background: rgb(26, 52, 37);
+
+            min-height: 400px;
+            width: 100vw;
+
+            position: absolute;
+            top: 85vh;
+
+            padding-top: 150px;
+            color: white;
+            text-align: center;
+        }
+
+
+        /* #home {
+            text-align: left;
+            float: left;
+        } */
+
+        footer {
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="home"><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Acorn Treat Toy</h1>
+        <p>Discover the best treats for your furry friend!</p>
+    </section>
+
+    <div class="wave">
+        <p>Our treats are made with the finest ingredients and are sure to make your dog's tail wag!</p>
+        <p>Shop now and give your dog the treat they deserve!</p>
+        <br>
+        <div>
+            <div class="featured-products">
+                <img src="../images/product.png" alt="Dog Treats">
+                <img src="../images/dogrender1.png" alt="Dog Treats">
+                <img src="../images/dogrender2.png" alt="Dog Treats">
+            </div>
+
+            <div style="margin-top: 100px; margin-bottom: 30px;">
+                <a href="shop.html" class="button">Shop Now</a>
+            </div>
+
+        </div>
+
+
+        <br>
+        <footer>
+            <p>&copy; 2024 Acorn. All rights reserved.</p>
+        </footer>
+    </div>
+
+
+
+
+</body>
+
+</html>

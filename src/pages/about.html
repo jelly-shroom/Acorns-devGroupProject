@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dog Treats Website</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(26, 52, 37);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+
+            width: 100vw;
+            position: absolute;
+        }
+
+        nav {
+            text-align: right;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 40px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* 
+        #home {
+            text-align: left;
+            float: left;
+        } */
+
+
+        .about {
+            background-color: #c8d08c;
+            display: flex;
+            height: 100vh;
+        }
+
+        .container {
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 50px;
+        }
+
+        .image {
+            background-color: rgb(26, 52, 37);
+            text-align: center;
+            width: 50%;
+            flex-shrink: 0;
+            overflow: hidden;
+
+        }
+
+        .image img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+
+            object-position: -300px;
+        }
+
+
+
+        footer {
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            background-color: rgb(26, 52, 37);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="home"><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Acorn, the best dog toy to keep your dog entertained for hours. Our toys are made from the
+                best materials and are designed to be durable and long-lasting. We have a wide range of toys to choose
+                from, so you can find the perfect toy for your dog. Our toys are also great for training and can help to
+                keep your dog mentally stimulated.</p>
+            <p>
+                Our team is dedicated to providing the best products for your furry friend. We are passionate about dogs
+                and want to help you give your dog the best life possible. Our toys are designed to be fun and engaging,
+                so your dog will love playing with them. We are committed to providing the best customer service and
+                are always here to help with any questions or concerns you may have.
+            </p>
+            <p>
+                When we first started Acorn, we wanted to create a toy that would keep our own dogs entertained and
+                happy. We found that many toys on the market were not durable enough and would break easily. We wanted
+                to create a toy that would last a long time and be fun for our dogs to play with. After months of
+                research and testing, we finally created the perfect toy. Our dogs loved it, and we knew that other dog
+                owners would love it too. That's how Acorn was born.
+            </p>
+        </div>
+
+        <div class="image">
+            <img src="../images/dogAbout.jpg" alt="Large Image" class="large-image">
+        </div>
+
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Acorn. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
